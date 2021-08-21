@@ -1,0 +1,25 @@
+POST http://localhost:8000/register/student
+Content-Type: application/json
+
+{
+    "uname": "prashin",
+    "email": "prashinmore@gmail.com",
+    "password": "Password@12",
+    "role": "student"
+}
+
+###
+
+POST http://localhost:8000/login/
+Content-Type: application/json
+
+{
+    "uname": "prashin",
+    "password": "Password@12"
+}
+
+
+###
+POST http://localhost:8000/login/token
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicHJhc2hpbiIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNjI5NDUzNjQxfQ.eS-Zw63FP0e7N_UlQJr-fDn02rGcoQMQ9a5TcZxVtEA
